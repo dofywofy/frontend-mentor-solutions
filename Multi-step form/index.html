@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link 
+    rel="icon" 
+    type="image/png" 
+    sizes="32x32" 
+    href="./assets/images/favicon-32x32.png"/>
+  
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="form">
+    <div class="form-container">
+      <!-- Sidebar start -->
+      <div class="form-sidebar">
+        <div class="step active">
+          <div class="circle">1</div>
+          <div class="step-content">
+            <span>Step 1</span>
+            <b>Your info</b>
+          </div>
+        </div>
+        <div class="step">
+          <div class="circle">2</div>
+          <div class="step-content">
+            <span>Step 2</span>
+            <b>Select plan</b>
+          </div>
+        </div>
+        <div class="step">
+          <div class="circle">3</div>
+          <div class="step-content">
+            <span>Step 3</span>
+            <b>Add-ons</b>
+          </div>
+        </div>
+        <div class="step">
+          <div class="circle">4</div>
+          <div class="step-content">
+            <span>Step 4</span>
+            <b>Summary</b>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+      <!-- * Step 1 start -->
+      <div class="stp step-1">
+        <div class="header">
+          <h1 class="title">Personal info</h1>
+          <p class="subtitle">
+            Please provide your name, email address, and phone number.
+          </p>
+        </div>
+        <form>
+          <div class="label">
+            <label for="name">Name</label>
+            <p class="error">This Field Is Required</p>
+          </div>
+          <input
+            required
+            type="text"
+            id="name"
+            placeholder="e.g. Stephen King"
+          />
+          <div class="label">
+            <label for="email">Email Address</label>
+            <p class="error">This Field Is Required</p>
+          </div>
+          <input
+            required
+            type="text"
+            id="email"
+            placeholder="e.g. stephenking@lorem.com"
+          />
+          <div class="label">
+            <label for="phone">Phone Number</label>
+            <p class="error">This Field Is Required</p>
+          </div>
+          <input
+            required
+            type="tel"
+            id="phone"
+            placeholder="e.g. +1 234 567 890"
+          />
+        </form>
+        <div class="btns">
+          <button class="next-step" type="submit">Next Step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Step 1 end -->
+
+  <!-- Step 2 start -->
+
+  <!-- Select your plan
+  You have the option of monthly or yearly billing.
+
+  Arcade
+  $9/mo
+
+  Advanced
+  $12/mo
+
+  Pro
+  $15/mo
+
+  Monthly
+  Yearly
+
+  Go Back
+  Next Step
+
+  <!-- Step 2 end -->
+
+  <!-- Step 3 start -->
+
+  <!-- Pick add-ons
+  Add-ons help enhance your gaming experience.
+
+  Online service
+  Access to multiplayer games
+  +$1/mo
+
+  Larger storage
+  Extra 1TB of cloud save
+  +$2/mo
+
+  Customizable Profile
+  Custom theme on your profile
+  +$2/mo
+
+  Go Back
+  Next Step
+
+  <!-- Step 3 end -->
+
+  <!-- Step 4 start -->
+
+  <!--Finishing up
+  Double-check everything looks OK before confirming.
+
+  <!-- Dynamically add subscription and add-on selections here -->
+
+  <!--Total (per month/year)
+
+  Go Back
+  Confirm
+
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+
+  <!--Thank you!
+
+  Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com.
+
+  Step 5 end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dhruv</a>.
+  </div>
+</body>
+</html>
